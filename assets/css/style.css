@@ -21,6 +21,10 @@ body {
      height: 50px;
      width: 100px;
  }
+ #btn-list {
+     text-align: center;
+     padding-top: 100px;
+ }
 
  .game-item {
      margin: 40px;

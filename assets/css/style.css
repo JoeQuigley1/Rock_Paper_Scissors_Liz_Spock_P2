@@ -1,17 +1,28 @@
+body {
+    background-color: blanchedalmond;
+}
 .choice-list {
     background-color: blue;
-    height: 100px;
-    width: 50%;
+    height: 100px;;
     text-align: center;
-    margin: 0 auto;
     line-height: 100px;
+    border: solid 2px;
+    font-size: 30px ;
 }
  #rules {
-     margin: 0 auto;
      border: solid 2px green;
+     margin-top: 10px;
+ }
+ #game-head {
+     text-align: center;
  }
 
  .btn {
      height: 50px;
      width: 100px;
+ }
+
+ .game-item {
+     margin: 40px;
+
  }

@@ -1,0 +1,17 @@
+.choice-list {
+    background-color: blue;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 100px;
+}
+ #rules {
+     margin: 0 auto;
+     border: solid 2px green;
+ }
+
+ .btn {
+     height: 50px;
+     width: 100px;
+ }

@@ -16,6 +16,11 @@ body {
  #game-head {
      text-align: center;
  }
+ #game-choice {
+     font-size: 30px;
+     text-align: center;
+     padding-top: 100px;
+ }
 
  .btn {
      height: 50px;
@@ -23,10 +28,37 @@ body {
  }
  #btn-list {
      text-align: center;
-     padding-top: 100px;
  }
 
  .game-item {
      margin: 40px;
 
+ }
+
+ #you {
+     float: left;
+     width: 45%;
+     text-align: center;
+     font-size: 40px;
+ }
+
+ #comp {
+     float: right;
+     width: 45%;
+     text-align: center;
+     font-size: 40px;
+ }
+
+ #score-you {
+    float: left;
+    width: 45%;
+    text-align: center;
+    font-size: 40px;
+ }
+
+ #score-comp {
+    float: left;
+    width: 45%;
+    text-align: center;
+    font-size: 40px;
  }

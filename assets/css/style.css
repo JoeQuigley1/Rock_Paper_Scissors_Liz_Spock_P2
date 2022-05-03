@@ -1,14 +1,12 @@
-body {
-    background-color: #2847A0;
-}
+
 .choice-list {
-    background-color: #3E5598;
-    height: 100px;;
+    height: 100px;
     text-align: center;
     line-height: 100px;
     border: solid 2px;
     font-size: 30px ;
-    width: 100%;
+    width: 40%;
+    margin: auto;
 }
  #rules {
      border: solid 2px green;
@@ -27,22 +25,7 @@ body {
      height: 50px;
      width: 100px;
  }
- .btn-rock{
-     background-color: #A04528 ;
- }
- .btn-paper {
-     background-color: #A04528;
- }
- .btn-scissors{
-     background-color: #A04528;
- }
- 
- .btn-lizard {
-     background-color: #A04528;
- }
- .btn-spock{
-     background-color: #A04528 ;
- }
+
 
  #btn-list {
      text-align: center;

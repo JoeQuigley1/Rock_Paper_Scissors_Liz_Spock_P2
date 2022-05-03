@@ -4,4 +4,4 @@ Explanation image taken from openclipart link- https://openclipart.org/detail/32
 
 Individual images taken from PNG ENG - https://www.pngegg.com/en/png-iiamd
 
-favicon image was taken frompinterest - https://br.pinterest.com/pin/471189179763434016/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id={{default.session}}&simplified=true
+favicon image was taken from pinterest - https://br.pinterest.com/pin/471189179763434016/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id={{default.session}}&simplified=true

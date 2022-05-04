@@ -4,9 +4,14 @@ const computerScore = document.getElementById("score-comp");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
-function runGame(){
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            let playerChoice = this.getAttribute("data-choice");
+            playGame(playerChoice);
 
-}
+        });
+ }
+
 
 
 function incrementScorePlayer() {

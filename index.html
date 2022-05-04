@@ -16,31 +16,34 @@
     <title>Document</title>
 </head>
 <body>
-    <section> 
+    <section id="game-rules"> 
         <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
+        <button class="btn "  id="rules">Rules</button>
     </section>
     <section class="game-area" >
         <div>
             <h2 class="heading">Please make your choice:</h2>
         </div>
         <div id="btn-list">
-            <button class="btn game-item btn-rock" > <i class="fa-solid fa-hand-back-fist"></i></button>
-            <button class="btn game-item btn-paper"> <i class="fa-solid fa-hand"></i></button>
-            <button class="btn game-item btn-scissors"> <i class="fa-solid fa-hand-scissors"></i> </button>
-            <button class="btn game-item btn-lizard"> <i class="fa-solid fa-hand-lizard"></i></button>
-            <button class="btn game-item btn-spock"> <i class="fa-solid fa-hand-spock"></i></button>
+            <button class="btn game-item btn-rock" data-choice="0" > <i class="fa-solid fa-hand-back-fist"></i></button>
+            <button class="btn game-item btn-paper" data-choice="1"> <i class="fa-solid fa-hand"></i></button>
+            <button class="btn game-item btn-scissors"data-choice="2"> <i class="fa-solid fa-hand-scissors"></i> </button>
+            <button class="btn game-item btn-lizard" data-choice="3"> <i class="fa-solid fa-hand-lizard"></i></button>
+            <button class="btn game-item btn-spock" data-choice="4"> <i class="fa-solid fa-hand-spock"></i></button>
         </div>
     
 
     </section>
     <section id="score-area">
-        <div>
+        <div class="score-heading" id="player-heading">
             <h1> Player</h1>
-            <span id="player-score">0</span>
+            <p class="scores">Score:<span id="player-score">0</span></p>
+            <img id="player-image" src="assets/images/rpsls-explanation.png" alt="Rock Paper Scissors Lizard Spock">
         </div>
-        <div>
+        <div class="score-heading" id="comp-heading">
             <h1>Computer</h1>
-            <span id="computer-score">0</span>
+            <p class="scores">Score:<span id="computer-score">0</span></p>
+            <img id="computer-image" src="assets/images/rpsls-explanation.png" alt="Rock Paper Scissors Lizard Spock">
         </div>
     </section>
 

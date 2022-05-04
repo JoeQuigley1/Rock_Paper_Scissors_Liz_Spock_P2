@@ -1,4 +1,6 @@
-
+#game-rules {
+    text-align: center;
+}
 .heading {
     text-align: center;
     font-size: 2.5rem;
@@ -14,8 +16,9 @@
     margin: auto;
 }
  #rules {
-     border: solid 2px green;
-     margin-top: 10px;
+     border: solid 2px;
+     margin: auto;
+     text-align: center;
  }
  #game-head {
      text-align: center;
@@ -41,30 +44,23 @@
 
  }
 
- #you {
-     float: left;
-     width: 45%;
-     text-align: center;
-     font-size: 40px;
- }
+.score-heading {
+    text-align: center;
+}
 
- #comp {
-     float: right;
-     width: 45%;
-     text-align: center;
-     font-size: 40px;
- }
-
- #score-you {
+#player-heading {
     float: left;
     width: 45%;
-    text-align: center;
-    font-size: 40px;
- }
 
- #score-comp {
-    float: left;
+}
+#comp-heading {
+    float: right;
     width: 45%;
-    text-align: center;
-    font-size: 40px;
- }
+}
+
+#player-image {
+    width: 50%;
+}
+#computer-image {
+    width: 50%;
+}

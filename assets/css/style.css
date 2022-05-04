@@ -1,4 +1,9 @@
 
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10px;
+}
 .choice-list {
     height: 100px;
     text-align: center;

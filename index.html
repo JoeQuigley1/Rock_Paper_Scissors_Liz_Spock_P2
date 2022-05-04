@@ -16,15 +16,13 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="game-head">
-        <div class=" choice-list">Rock, Paper, Scissors, Spock, Lizard </div>
-        <div >
-            <button id="rules" class = "btn" > Rules</button>
-        </div>
-    </header>    
-
+    <section> 
+        <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
+    </section>
     <section class="game-area" >
-        <div id="game-choice">Please make your choice:</div>
+        <div>
+            <h2 class="heading">Please make your choice:</h2>
+        </div>
         <div id="btn-list">
             <button class="btn game-item btn-rock" > <i class="fa-solid fa-hand-back-fist"></i></button>
             <button class="btn game-item btn-paper"> <i class="fa-solid fa-hand"></i></button>
@@ -33,16 +31,17 @@
             <button class="btn game-item btn-spock"> <i class="fa-solid fa-hand-spock"></i></button>
         </div>
     
-        <div id="you">
-            <h1>Player</h1>
-        </div>
-        <div id="comp">
-            <h1>Computer</h1>
-        </div>
+
     </section>
     <section id="score-area">
-        <div id="score-you">Score:</div>
-        <div id="score-comp">Score:</div>
+        <div>
+            <h1> Player</h1>
+            <span id="player-score">0</span>
+        </div>
+        <div>
+            <h1>Computer</h1>
+            <span id="computer-score">0</span>
+        </div>
     </section>
 
     

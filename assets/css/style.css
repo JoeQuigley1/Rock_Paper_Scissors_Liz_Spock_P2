@@ -64,3 +64,8 @@
 #computer-image {
     width: 50%;
 }
+#social-link {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

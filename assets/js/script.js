@@ -12,11 +12,11 @@ const choices = ["rock", "paper", "scissors", "lizard", "spock"];
         });
  }
 
-
+let computerChoice= Math.floor(Math.random() * 5);
 
 function incrementScorePlayer() {
 
-}
+} 
 
 function incrementScoreComputer() {
     

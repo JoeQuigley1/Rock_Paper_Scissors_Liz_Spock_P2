@@ -68,4 +68,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    overflow: auto;
+    text-align: center;
+    font-size: 30px;
 }

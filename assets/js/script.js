@@ -1,6 +1,6 @@
 const buttons = document.getElementsByClassName("game-item");
-const playerScore = document.getElementById("score-you");
-const computerScore = document.getElementById("score-comp");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 

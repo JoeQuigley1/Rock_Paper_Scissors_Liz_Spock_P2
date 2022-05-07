@@ -17,9 +17,15 @@ function playGame(){
 
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
+
+    let computerChoice= Math.floor(Math.random() * 5);
+
+    computerImage = `assets/images${choices[computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
+
 }
 
-let computerChoice= Math.floor(Math.random() * 5);
+
 let rulesExplanation = document.getElementById("rules");
 
 

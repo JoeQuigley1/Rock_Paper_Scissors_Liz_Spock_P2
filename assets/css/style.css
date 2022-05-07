@@ -1,3 +1,8 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 #game-rules {
     text-align: center;
 }
@@ -5,15 +10,6 @@
     text-align: center;
     font-size: 2.5rem;
     padding: 10px;
-}
-.choice-list {
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    border: solid 2px;
-    font-size: 30px ;
-    width: 40%;
-    margin: auto;
 }
  #rules {
      border: solid 2px;
@@ -23,17 +19,11 @@
  #game-head {
      text-align: center;
  }
- #game-choice {
-     font-size: 30px;
-     text-align: center;
-     padding-top: 100px;
- }
 
  .btn {
      height: 50px;
      width: 100px;
  }
-
 
  #btn-list {
      text-align: center;
@@ -41,34 +31,43 @@
 
  .game-item {
      margin: 40px;
+     display: inline-block;
 
  }
 
 .score-heading {
     text-align: center;
 }
+#score-area {
+    display: inline-block;
+}
 
 #player-heading {
     float: left;
     width: 45%;
-
 }
-#comp-heading {
+
+#computer-heading {
     float: right;
     width: 45%;
 }
+#player-image{
+    width: 45%;
 
-#player-image {
-    width: 50%;
 }
-#computer-image {
-    width: 50%;
+#computer-image{
+    width: 45%;
+}
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    min-height: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
 }
 #social-link {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    overflow: auto;
-    text-align: center;
-    font-size: 30px;
-}
+        text-align: center;
+    }

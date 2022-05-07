@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
+
+
 <body>
     <header id="game-rules"> 
         <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
@@ -24,10 +25,12 @@
     --> 
     </header>
     
+
     <section class="game-area" >
         <div>
             <h2 class="heading">Please make your choice:</h2>
         </div>
+
         <div id="btn-list">
             <button aria-label="Rock" class="btn game-item btn-rock" data-choice="0" > <i class="fa-solid fa-hand-back-fist"></i>  Rock</button>
             <button aria-label="Paper" class="btn game-item btn-paper" data-choice="1"> <i class="fa-solid fa-hand"></i>  Paper</button>
@@ -38,21 +41,20 @@
     
 
     </section>
-    <div id="message" onclick="rulesExplanation()"> <p>messages that should pop up using js</p>  
 
-    </div>
+    
     <section id="score-area">
         <div class="score-heading" id="player-heading">
-            <h1> Player</h1>
-            <p class="scores">Score:<span id="player-score">0</span></p>
+            <h1> Player score:<span id="player-score">0</span></h1>
         </div>
         <div class="score-heading" id="comp-heading">
-            <h1>Computer</h1>
-            <p class="scores">Score:<span id="computer-score">0</span></p>
+            <h1>Computer score:<span id="computer-score">0</span></h1>
+           
         </div>
     </section>
 
-    
+    <div id="result"></div>
+
 
 <footer id="social-link"> <i class="fa-brands fa-facebook"></i> </footer>
     <script src="assets/js/script.js"> </script>

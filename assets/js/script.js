@@ -4,6 +4,7 @@ const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+const resultDisplay = document.getElementById("result");
 
 
 for (let button of buttons) {
@@ -29,10 +30,25 @@ function playGame(playerChoice) {
     updateScores(result);
 }
 
+const checkWinner= () => {
+    switch (playerChoice + computerChoice) {
+        case 'scissorspaper':
+        case 'scissorslizard':
+        case 'rockscissors':
+        case 'rocklizard':
+        case 'paperrock':
+        case 'paperspock':
+        case 'spockrock':
+        case 'spockscissors':
+            resultDisplay.innerHTML = "You win"
+            break
+    }
+}
+
 function incrementScorePlayer() {
 
 } 
 
 function incrementScoreComputer() {
     
-}
+} 

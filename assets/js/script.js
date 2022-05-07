@@ -18,11 +18,12 @@ function playGame(playerChoice) {
     playerImage.src =`assets/images/${choices[playerChoice]}.png`;
     computerImage.alt = choices[computerChoice];    
 
-    let computerChoice = Math.floor(Math.random() *3);
+    let computerChoice = Math.floor(Math.random() * choices.length);
 
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
+    
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
     updateScores(result);

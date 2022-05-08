@@ -7,14 +7,16 @@ const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const result = document.getElementById("result");
 
 
-for (let button of buttons) {
+
+
+/*for (let button of buttons) {
     button.addEventListener("click", function() {
         let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
-}
+}*/
 
-function playGame(playerChoice) {
+f/*unction playGame(playerChoice) {
 
     playerImage.src =`assets/images/${choices[playerChoice]}.png`;
     computerImage.alt = choices[computerChoice];    
@@ -28,7 +30,7 @@ function playGame(playerChoice) {
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
     updateScores(result);
-}
+} */
 
 const checkWinner= () => {
     switch (playerChoice + computerChoice) {

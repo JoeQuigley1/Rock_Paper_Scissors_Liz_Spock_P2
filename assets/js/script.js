@@ -1,10 +1,10 @@
-const buttons = document.querySelectorAll(".game-item");
+const buttons = document.getElementsByClassName("game-item");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
-const resultDisplay = document.getElementById("result");
+const result = document.getElementById("result");
 
 
 for (let button of buttons) {

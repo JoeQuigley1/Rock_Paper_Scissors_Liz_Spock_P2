@@ -98,6 +98,13 @@ function main() {
 
 main();
 
+function endGame() {
+    if (playerScore === 10);
+    alert("Congratulations you won!");
+    if (computerScore === 10);
+    alert("Better lucknext time!");
+}
+
 
 /*const buttons = document.getElementsByClassName("game-item");
 const playerScore = document.getElementById("player-score");

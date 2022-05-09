@@ -11,8 +11,11 @@ html {
     font-size: 2.5rem;
     padding: 10px;
 }
+.score-area {
+    text-align: center;
+}
 
-.result {
+#result {
     text-align: center;
 }
 

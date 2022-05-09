@@ -81,6 +81,7 @@ function game(playerChoice) {
             draw(playerChoice, computerChoice);
             break;
     }
+    endGame();
 }
 
 
@@ -94,15 +95,21 @@ function main() {
     lizard_div.addEventListener('click', () => game("lizard"));
 
     spock_div.addEventListener('click', () => game("spock"));
+    
 }
 
 main();
 
+
 function endGame() {
-    if (playerScore === 10);
-    alert("Congratulations you won!");
-    if (computerScore === 10);
-    alert("Better lucknext time!");
+    if (playerScore === 10){
+         alert("Congratulations you won!");
+    }
+   
+    if (computerScore === 10){
+        alert("Better luck next time!");
+    }
+    
 }
 
 

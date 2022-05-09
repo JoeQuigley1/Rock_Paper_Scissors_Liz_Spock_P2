@@ -85,26 +85,15 @@ function game(playerChoice) {
 
 
 function main() {
-    rock_div.addEventListener('click', function() {
-        game("rock")
-});
+    rock_div.addEventListener('click', () => game("rock"));
 
+    paper_div.addEventListener('click', () => game("paper"));
 
-    paper_div.addEventListener('click', function() {
-        game("paper")
-});
+    scissors_div.addEventListener('click', () => game("scissors"));
 
-    scissors_div.addEventListener('click', function() {
-        game("scissors")
-});
+    lizard_div.addEventListener('click', () => game("lizard"));
 
-    lizard_div.addEventListener('click', function() {
-    game("lizard")
-});
-
-    spock_div.addEventListener('click', function() {
-    game("spock")
-});
+    spock_div.addEventListener('click', () => game("spock"));
 }
 
 main();

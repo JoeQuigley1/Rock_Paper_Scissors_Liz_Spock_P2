@@ -14,6 +14,18 @@ function getComputerChoice() {
 (getComputerChoice());
 
 
+function win() {
+    console.log("win");
+}
+
+function lose() {
+    console.log("lose")
+}
+
+function draw() {
+    console.log("draw")
+}
+
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     console.log("computer choice =>" + computerChoice);
@@ -29,7 +41,7 @@ function game(userChoice) {
         case "spockscissors":
         case "lizardpaper":
         case "lizardspock":
-            console.log("USER wins!");
+            win();
             break;
         case "rockpaper":
         case "rockspock":
@@ -41,13 +53,15 @@ function game(userChoice) {
         case "spocklizard":
         case "lizardscissors":
         case "lizardrock":
-            console.log("YOU lose!!");
+            lose();
             break;
         case "paperpaper":
         case "scissorsscissors":
         case "rockrock":
         case "spockspock":
         case "lizardlizard":
+            draw();
+            break;
     }
 }
 

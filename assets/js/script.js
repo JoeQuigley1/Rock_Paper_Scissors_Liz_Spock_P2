@@ -7,7 +7,7 @@ const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
 let playerScore = 0;
-let computerScore =0;
+let computerScore = 0;
 
 
 function getComputerChoice() {
@@ -20,7 +20,7 @@ function getComputerChoice() {
 
 function win() {
     playerScore++;
-    console.log(playerScore);
+    playScore_span.innerHTML = playerScore;
 }
 
 function lose() {

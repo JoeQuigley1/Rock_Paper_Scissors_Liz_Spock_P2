@@ -1,6 +1,6 @@
-const playScore_span = document.getElementById("player-score");
+const playerScore_span = document.getElementById("player-score");
 const computerScore_span = document.getElementById("computer-score");
-const result_div = document.querySelector(".result");
+const result_div = document.querySelector("#result");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
@@ -18,9 +18,11 @@ function getComputerChoice() {
 (getComputerChoice());
 
 
-function win() {
+function win(playerChoice, computerChoice) {
     playerScore++;
-    playScore_span.innerHTML = playerScore;
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    result_div.innerHTML = playerChoice + " beats " + computerChoice + "You win!";
 }
 
 function lose() {
@@ -31,11 +33,9 @@ function draw() {
     console.log("draw")
 }
 
-function game(userChoice) {
+function game(playerChoice) {
     const computerChoice = getComputerChoice();
-    console.log("computer choice =>" + computerChoice);
-    console.log("user choice =>" + userChoice);
-    switch(userChoice + computerChoice) {
+    switch(playerChoice + computerChoice) {
         case "rockscissors":
         case "rocklizard":
         case "paperspock":
@@ -46,7 +46,7 @@ function game(userChoice) {
         case "spockscissors":
         case "lizardpaper":
         case "lizardspock":
-            win();
+            win(playerChoice, computerChoice);
             break;
         case "rockpaper":
         case "rockspock":
@@ -58,14 +58,14 @@ function game(userChoice) {
         case "spocklizard":
         case "lizardscissors":
         case "lizardrock":
-            lose();
+            lose(playerChoice, computerChoice);
             break;
         case "paperpaper":
         case "scissorsscissors":
         case "rockrock":
         case "spockspock":
         case "lizardlizard":
-            draw();
+            draw(playerChoice, computerChoice);
             break;
     }
 }

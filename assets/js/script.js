@@ -1,13 +1,13 @@
 const result_div = document.querySelector(".result");
-const rock_div = document.getElementById("r");
-const paper_div = document.getElementById("p");
-const scissors_div = document.getElementById("s");
-const lizard_div = document.getElementById("l");
-const spock_div = document.getElementById("sp");
+const rock_div = document.getElementById("rock");
+const paper_div = document.getElementById("paper");
+const scissors_div = document.getElementById("scissors");
+const lizard_div = document.getElementById("lizard");
+const spock_div = document.getElementById("spock");
 
 
 function getComputerChoice() {
-    const choices = ['r', 'p', 's', 'l', 'sp' ];
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock' ];
     const randomNumber =Math.floor(Math.random()*choices.length);
     return choices[randomNumber];
 }
@@ -23,31 +23,28 @@ function game(userChoice) {
 
 function main() {
     rock_div.addEventListener('click', function() {
-        game("r")
+        game("rock")
 });
 
 
     paper_div.addEventListener('click', function() {
-        game("p")
+        game("paper")
 });
 
     scissors_div.addEventListener('click', function() {
-        game("s")
+        game("scissors")
 });
 
     lizard_div.addEventListener('click', function() {
-    game("l")
+    game("lizard")
 });
 
     spock_div.addEventListener('click', function() {
-    game("sp")
+    game("spock")
 });
 }
 
 main();
-
-
-
 
 
 /*const buttons = document.getElementsByClassName("game-item");

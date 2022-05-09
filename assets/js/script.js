@@ -18,6 +18,37 @@ function game(userChoice) {
     const computerChoice = getComputerChoice();
     console.log("computer choice =>" + computerChoice);
     console.log("user choice =>" + userChoice);
+    switch(userChoice + computerChoice) {
+        case "rockscissors":
+        case "rocklizard":
+        case "paperspock":
+        case "paperrock":
+        case "scissorslizard":
+        case "scissorspaper":
+        case "spockrock":
+        case "spockscissors":
+        case "lizardpaper":
+        case "lizardspock":
+            console.log("USER wins!");
+            break;
+        case "rockpaper":
+        case "rockspock":
+        case "paperscissors":
+        case "paperlizard":
+        case "scissorsrock":
+        case "scissorsspock":
+        case "spockpaper":
+        case "spocklizard":
+        case "lizardscissors":
+        case "lizardrock":
+            console.log("YOU lose!!");
+            break;
+        case "paperpaper":
+        case "scissorsscissors":
+        case "rockrock":
+        case "spockspock":
+        case "lizardlizard":
+    }
 }
 
 

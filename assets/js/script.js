@@ -2,11 +2,13 @@ const result_div = document.querySelector(".result");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const lizard_div = document.getElementById("l");
+const spock_div = document.getElementById("sp");
 
 
 function getComputerChoice() {
-    const choices = ['r', 'p', 's'];
-    const randomNumber =Math.floor(Math.random()*3);
+    const choices = ['r', 'p', 's', 'l', 'sp' ];
+    const randomNumber =Math.floor(Math.random()*choices.length);
     return choices[randomNumber];
 }
 (getComputerChoice());
@@ -14,7 +16,7 @@ function getComputerChoice() {
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
-    console.log("computer choice=>" + computerChoice);
+    console.log("computer choice =>" + computerChoice);
     console.log("user choice =>" + userChoice);
 }
 
@@ -31,6 +33,14 @@ function main() {
 
     scissors_div.addEventListener('click', function() {
         game("s")
+});
+
+    lizard_div.addEventListener('click', function() {
+    game("l")
+});
+
+    spock_div.addEventListener('click', function() {
+    game("sp")
 });
 }
 

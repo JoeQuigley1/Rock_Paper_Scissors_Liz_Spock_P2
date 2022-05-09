@@ -11,6 +11,28 @@ html {
     font-size: 2.5rem;
     padding: 10px;
 }
+
+.result {
+    text-align: center;
+}
+
+.choices {
+    width: 100% ;
+    text-align: center;
+    margin: 50px 0;
+    
+}
+
+.choice {
+    display: inline-block;
+}
+img {
+    width: 5.5vw;
+    display: inline-block;
+    padding: 10px;
+}
+
+/*
  #rules {
      border: solid 2px;
      margin: auto;
@@ -58,7 +80,7 @@ html {
 #computer-image{
     width: 45%;
 }
-
+*/
 
 #footer {
     position: absolute;

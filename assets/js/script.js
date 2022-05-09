@@ -1,10 +1,52 @@
-const buttons = document.getElementsByClassName("game-item");
+const result_div = document.querySelector(".result");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
+
+
+function getComputerChoice() {
+    const choices = ['r', 'p', 's'];
+    const randomNumber =Math.floor(Math.random()*3);
+    return choices[randomNumber];
+}
+(getComputerChoice());
+
+
+function game(userChoice) {
+    const computerChoice = getComputerChoice();
+    console.log("computer choice=>" + computerChoice);
+    console.log("user choice =>" + userChoice);
+}
+
+
+function main() {
+    rock_div.addEventListener('click', function() {
+        game("r")
+});
+
+
+    paper_div.addEventListener('click', function() {
+        game("p")
+});
+
+    scissors_div.addEventListener('click', function() {
+        game("s")
+});
+}
+
+main();
+
+
+
+
+
+/*const buttons = document.getElementsByClassName("game-item");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
-const result = document.getElementById("result");
+const result = document.getElementById("result");*/
 
 
 
@@ -32,7 +74,7 @@ f/*unction playGame(playerChoice) {
     updateScores(result);
 } */
 
-const checkWinner= () => {
+/*const checkWinner= () => {
     switch (playerChoice + computerChoice) {
         case 'scissorspaper':
         case 'scissorslizard':
@@ -53,4 +95,7 @@ function incrementScorePlayer() {
 
 function incrementScoreComputer() {
     
-} 
+}*/
+
+
+

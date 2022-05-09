@@ -33,12 +33,17 @@ function win(playerChoice, computerChoice) {
     result_div.innerHTML = `${capitaliseWord(playerChoice)}  beats ${capitaliseWord(computerChoice)} . You win!`;
 }
 
-function lose() {
-    console.log("lose")
+function lose(playerChoice, computerChoice) {
+    computerScore++;
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    result_div.innerHTML = `${capitaliseWord(playerChoice)}  loses to ${capitaliseWord(computerChoice)} . You lost!`;
 }
 
-function draw() {
-    console.log("draw")
+function draw(playerChoice, computerChoice) {
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    result_div.innerHTML = `${capitaliseWord(playerChoice)} is the same as ${capitaliseWord(computerChoice)} . It's a draw!!`;
 }
 
 function game(playerChoice) {

@@ -103,13 +103,13 @@ main();
 
 function endGame() {
     if (playerScore === 10){
-        alert("Congratulations you won!");
+        alert("You got 10 points! Nice one! Click ok and choose again to continue playing.");
         playerScore = 0;
         computerScore = 0;
     }
    
     if (computerScore === 10){
-        alert("Better luck next time!");
+        alert("The computer won! Better luck next time. Click ok and choose again to continue playing.");
         playerScore = 0;
         computerScore = 0;
     }

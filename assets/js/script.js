@@ -11,18 +11,26 @@ let computerScore = 0;
 
 
 function getComputerChoice() {
-    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock' ];
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const randomNumber =Math.floor(Math.random()*choices.length);
     return choices[randomNumber];
 }
 (getComputerChoice());
+
+function capitaliseWord(word) {
+    if (word === "rock" ) return "Rock";
+    if (word === "paper") return "Paper";
+    if (word === "scissors") return "Scissors";
+    if (word === "lizard") return "Lizard";
+    return "Spock"
+}
 
 
 function win(playerChoice, computerChoice) {
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = playerChoice + " beats " + computerChoice + "You win!";
+    result_div.innerHTML = `${capitaliseWord(playerChoice)}  beats ${capitaliseWord(computerChoice)} . You win!`;
 }
 
 function lose() {

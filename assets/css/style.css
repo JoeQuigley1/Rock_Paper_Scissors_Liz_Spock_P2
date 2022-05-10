@@ -15,6 +15,13 @@ html {
     text-align: center;
 }
 
+.player{
+    display: inline-block ;
+}
+
+.computer {
+    display: inline-block; 
+}
 #result {
     text-align: center;
 }

@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #DBDBDB;
+    font-family: 'Radio Canada', sans-serif;
 
 }
 
@@ -19,7 +20,6 @@ body {
  }
  .heading h1 {
 text-align: center;
-margin-top: 0;
  }
 .score-area {
     text-align: center;

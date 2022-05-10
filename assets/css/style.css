@@ -3,14 +3,24 @@ html {
     min-height: 100%;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DBDBDB;
+
+}
+
 #game-rules {
     text-align: center;
 }
-.heading {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 10px;
-}
+ .heading {
+     background-color: #546A7B;
+     padding: 10px 0;
+ }
+ .heading h1 {
+text-align: center;
+margin-top: 0;
+ }
 .score-area {
     text-align: center;
 }
@@ -99,6 +109,8 @@ img {
     text-align: center;
     width: 100%;
     font-size: 20px;
+    background-color:#C2C2C2 ; 
+    padding: 10px 0;
 }
 #social-link {
         text-align: center;

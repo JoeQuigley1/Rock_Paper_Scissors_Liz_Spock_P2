@@ -57,11 +57,6 @@ text-align: center;
     margin: 0 20px;
     padding: 20px;
 }
-img {
-    width: 5.5vw;
-    display: inline-block;
-    padding: 10px;
-}
 
 .modal {
     display: none; /* Hidden by default */
@@ -82,7 +77,8 @@ img {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
+    text-align: center;
   }
   
   /* The Close Button */
@@ -100,54 +96,12 @@ img {
     cursor: pointer;
   }
 
-
-/*
- #rules {
-     border: solid 2px;
-     margin: auto;
-     text-align: center;
- }
- #game-head {
-     text-align: center;
- }
-
- .btn {
-     height: 50px;
-     width: 100px;
- }
-
- #btn-list {
-     text-align: center;
- }
-
- .game-item {
-     margin: 40px;
-     display: inline-block;
-
- }
-
-.score-heading {
+.rules {
     text-align: center;
 }
-
-
-#player-heading {
-    float: left;
-    width: 45%;
+#rules-img {
+    width: 20rem;
 }
-
-#computer-heading {
-    float: right;
-    width: 45%;
-}
-#player-image{
-    width: 45%;
-
-}
-#computer-image{
-    width: 45%;
-}
-*/
 
 #footer {
     position: absolute;

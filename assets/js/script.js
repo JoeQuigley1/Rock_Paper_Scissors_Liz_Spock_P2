@@ -8,6 +8,7 @@ const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
 let playerScore = 0;
 let computerScore = 0;
+const resetButton = document.getElementById("reset-button");
 
 
 function getComputerChoice() {
@@ -82,6 +83,7 @@ function game(playerChoice) {
             break;
     }
     endGame();
+
 }
 
 
@@ -99,6 +101,14 @@ function main() {
 }
 
 main();
+resetGame();
+
+function resetGame() {
+    resetButton.addEventListener('click',  () => {
+        console.log("Clicked");
+});
+}
+
 
 
 function endGame() {

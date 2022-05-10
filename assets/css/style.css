@@ -27,13 +27,18 @@ margin-top: 0;
 
 .player{
     display: inline-block ;
+    font-size: 3rem;
+    margin-right: 20px;
 }
 
 .computer {
     display: inline-block; 
+    font-size: 3rem;
+    margin-left: 20px;
 }
 #result {
     text-align: center;
+    font-size: 2rem;
 }
 
 .choices {

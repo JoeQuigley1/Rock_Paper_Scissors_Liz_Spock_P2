@@ -30,7 +30,7 @@ function win(playerChoice, computerChoice) {
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${capitaliseWord(playerChoice)}  beats ${capitaliseWord(computerChoice)} . You win!`;
+    result_div.innerHTML = `${capitaliseWord(playerChoice)}  beats ${capitaliseWord(computerChoice)}. You win!`;
 }
 
 function lose(playerChoice, computerChoice) {

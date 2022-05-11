@@ -115,8 +115,12 @@ function endGame() {
 }
 
 function gameOver() {
-    //*document.getElementById('gameOver').style.display="block";
-    
+    document.getElementById('gameOver').style.display="block";
+}
+
+function playAgain() {
+    document.getElementById('gameOver').style.display="none"
+    resetScore()
 }
 
 

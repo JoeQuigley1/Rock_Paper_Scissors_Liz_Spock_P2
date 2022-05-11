@@ -1,35 +1,38 @@
  <!DOCTYPE html>
 <html lang="en">
     <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock game">
+    <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, Browser Game">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title> Rock Paper Scissors Lizard Spock </title>
     </head>
 
 <body>
+        <!-- Heading which displays the name of the game -->
     <header class="heading"> 
         <h1 >Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
     
 
-
+        <!-- Score area for points and name tags -->
     <div class="score-area">
+
         <h2 class="player"> Player</h2>
 
         <div class ="points"><span id="player-score">0</span> : <span id="computer-score">0</span></div>
-    
+       
         <h2 class ="computer"> Computer</h2>
-    
-        
         <div id="result"></div>
     </div>
 
@@ -58,20 +61,21 @@
             </div>
 
         </div>
-
+            <!-- Second modal used to display who won -->
         <div id="gameOver" class="modal-game"> 
 
             <div class ="modal-content">
                 <span class="close" onclick="giveUp()">&times;</span>
                 <h1 id = "player-win">Well done! You win!</h1>
                 <h1 id="player-lose">The computer won!</h1>
+                <!-- This button gives the user an option to playagain -->
                 <button onclick="playAgain()">Play Again!</button>
             </div>
 
         </div>
 
     <section class="game-area">
-
+            <!-- Icons which act as buttons for the game choices -->
         <div class=" choices" >
         
             <div class="choice"id="rock">
@@ -90,9 +94,6 @@
                  <i class="fa-solid fa-hand-spock" alt="Spock icon"></i>  
             </div>
         </div>
-
-       
-
     </section>
 
     <script src="assets/js/script.js"> </script>

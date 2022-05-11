@@ -17,6 +17,7 @@ body {
  .heading {
      background-color: #546A7B;
      padding: 10px 0;
+     font-size: 2rem;
  }
  .heading h1 {
 text-align: center;
@@ -26,6 +27,11 @@ text-align: center;
     font-size: 3rem;
 }
 
+.points {
+    border: solid 2px;
+    display: inline-block;
+    width: 15%;
+}
 .player{
     display: inline-block ;
     font-size: 3rem;

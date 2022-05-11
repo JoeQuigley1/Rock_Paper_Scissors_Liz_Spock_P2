@@ -28,6 +28,8 @@ function win(playerChoice, computerChoice) {
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${capitaliseWord(playerChoice)}  beats ${capitaliseWord(computerChoice)}. You win!`;
+    document.getElementById(playerChoice).classList.add('winner');
+    setTimeout(function() {document.getElementById(playerChoice).classList.remove('winner') }, 200)
 }
 
 function lose(playerChoice, computerChoice) {
@@ -35,12 +37,16 @@ function lose(playerChoice, computerChoice) {
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${capitaliseWord(playerChoice)}  loses to ${capitaliseWord(computerChoice)}. You lost!`;
+    document.getElementById(playerChoice).classList.add('loser');
+    setTimeout(function() {document.getElementById(playerChoice).classList.remove('loser') }, 200)
 }
 
 function draw(playerChoice, computerChoice) {
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${capitaliseWord(playerChoice)} is the same as ${capitaliseWord(computerChoice)}. It's a draw!!`;
+    document.getElementById(playerChoice).classList.add('draw');
+    setTimeout(function() {document.getElementById(playerChoice).classList.remove('draw') }, 200)
 }
 
 function game(playerChoice) {

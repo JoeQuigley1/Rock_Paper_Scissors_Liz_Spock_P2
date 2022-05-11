@@ -99,28 +99,41 @@ main();
 
 function endGame() {
     if (playerScore === 10){
-        gameOver()
+        playerWin();
         playerScore = 0;
-        computerScore = 0;
-        resetScore(); 
+        computerScore = 0; 
+
     }
    
     if (computerScore === 10){
-        gameOver()
+        compWin();
         playerScore = 0;
         computerScore = 0;
-        resetScore();
+        
     }
     
 }
 
-function gameOver() {
+function compWin() {
     document.getElementById('gameOver').style.display="block";
+    document.getElementById('player-win').style.display="none";
+    
+}
+
+function playerWin(){
+    document.getElementById('gameOver').style.display="block";
+    document.getElementById('player-lose').style.display="none";
+    
 }
 
 function playAgain() {
+    document.getElementById('gameOver').style.display="block";
     document.getElementById('gameOver').style.display="none"
-    resetScore()
+    resetScore();
+}
+function giveUp() {
+    document.getElementById('gameOver').style.display="block";
+    document.getElementById('gameOver').style.display="none"
 }
 
 

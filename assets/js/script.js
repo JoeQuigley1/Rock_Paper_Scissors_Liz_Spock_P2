@@ -79,8 +79,6 @@ function game(playerChoice) {
             break;
     }
     endGame();
-    
-
 }
 
 
@@ -139,4 +137,13 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+var reset = function() {
+    playerScore = 0;
+    computerScore = 0;
+
+    document.getElementById("computer-score").innerHTML = computerScore
+
+    document.getElementById("player-score").innerHTML = playerScore
 }

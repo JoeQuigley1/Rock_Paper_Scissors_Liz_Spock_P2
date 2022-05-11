@@ -116,19 +116,21 @@ function endGame() {
 
 function compWin() {
     document.getElementById('gameOver').style.display="block";
-    document.getElementById('player-win').style.display="none";
+    document.getElementById('player-win').style.display ="none";
+    document.getElementById('player-lose').style.display ="block";
     
 }
 
 function playerWin(){
-    document.getElementById('gameOver').style.display="block";
-    document.getElementById('player-lose').style.display="none";
-    
+    document.getElementById('gameOver').style.display ="block";
+    document.getElementById('player-lose').style.display ="none";
+    document.getElementById('player-win').style.display ="block";
 }
 
 function playAgain() {
-    document.getElementById('gameOver').style.display="block";
     document.getElementById('gameOver').style.display="none"
+    document.getElementById('player-win').style.display ="none";
+    document.getElementById('player-lose').style.display ="none";
     resetScore();
 }
 function giveUp() {

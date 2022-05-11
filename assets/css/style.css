@@ -5,7 +5,7 @@ body {
     font-family: 'Radio Canada', sans-serif;
     height: 100vh;
 }
-
+/* Adds style to the title in the header */
  .heading {
      background-color: #546A7B;
      padding: 10px 0;
@@ -14,11 +14,12 @@ body {
  .heading h1 {
 text-align: center;
  }
+
+ /* Styles the main Score area and the user/computer headings */
 .score-area {
     text-align: center;
     font-size: 3rem;
 }
-
 .points {
     border: solid 2px;
     display: inline-block;
@@ -30,20 +31,27 @@ text-align: center;
     margin-right: 20px;
     width: 20%;
 }
-
-
 .computer {
     display: inline-block; 
     font-size: 3rem;
     margin-left: 20px;
     width: 20%;
 }
+/* Styles the pop up result of the game with text */
 #result {
     text-align: center;
     font-size: 2rem;
     margin: 5% 0;
 }
-
+/* Styles the buttons that are displayed under the result and abve the icons*/
+.buttons {
+    padding: 5px;
+    margin: 0 .5rem;
+}
+.rules {
+  text-align: center;
+}
+/* Styles the icons which act as buttons for each game choice*/
 .choices {
     width: 100% ;
     text-align: center;
@@ -51,7 +59,6 @@ text-align: center;
     padding-bottom: 5%;
     
 }
-
 .choice {
     display: inline-block;
     font-size: 5.5rem;
@@ -60,77 +67,13 @@ text-align: center;
     margin: 0 20px;
     padding: 20px;
 }
-
+/* Gives the icons a color when clicked or hovered over.*/
 .choice:hover,
 .choice:focus {
     background-color: #546A7B;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  .modal-game {
-    display:none ; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto; /* 5% and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 40%; /* Could be more or less, depending on screen size */
-    text-align: center;
-  }
-
-  .modal p {
-      font-size: 1.5rem;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .buttons {
-      padding: 5px;
-      margin: 0 .5rem;
-  }
-
-.rules {
-    text-align: center;
-}
-#rules-img {
-    width: 20rem;
-}
-
+/* Adds a border shadow outside the icons to indicate what the result was */
 .winner{
     box-shadow:0 0 1rem green;
 }
@@ -143,29 +86,84 @@ text-align: center;
     box-shadow: 0 0 1rem ;
 }
 
-
+/* Style for the pop up modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  /* This modal is used to display the end result after 10 turns */
+  .modal-game {
+    display:none ; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; 
+    text-align: center;
+  }
+/* Styles the paragrphs inside the modal*/
+  .modal p {
+      font-size: 1.5rem;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Changes color of the x when hovered over */
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* Syles the image that is in the modal which exlpains the rules */
+#rules-img {
+    width: 20rem;
+}
+/* Media queries which help to maintain integrity of the game on all platforms */
 @media screen and (max-width:1280px) {
     .heading {
         font-size: 1rem;
     }
-
     .modal p {
         font-size: 1rem;
     }
-
 }
-
 @media screen and (max-width:1050px) {
-        
         .choice {
             font-size: 3rem;
         }
         .modal-content{
             width: 80%;
         }
-    
-}
 
+}
  @media screen and (max-width:650px) {
         .score-area {
             font-size: 2rem;
@@ -186,8 +184,6 @@ text-align: center;
             font-size: 2rem;
         }
     }
-
-
 @media screen and (max-width:450px){
 
     .score-area {
@@ -212,7 +208,6 @@ text-align: center;
         padding: 20px;
         margin: 2%;
     }
-
     .rules {
         padding:10%;
     }

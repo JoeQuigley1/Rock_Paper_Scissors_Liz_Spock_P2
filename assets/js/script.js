@@ -99,14 +99,14 @@ main();
 
 function endGame() {
     if (playerScore === 10){
-        alert("You got 10 points! Nice one! Click ok and choose again to continue playing.");
+        gameOver();
         playerScore = 0;
         computerScore = 0;
         updateScore(); 
     }
    
     if (computerScore === 10){
-        alert("The computer won! Better luck next time. Click ok and choose again to continue playing.");
+        gameOver()
         playerScore = 0;
         computerScore = 0;
         updateScore();
@@ -114,7 +114,13 @@ function endGame() {
     
 }
 
-var gameover = document.getElementById('gameOver');
+function gameOver() {
+    document.getElementById('gameOver').style.display="block";
+    span.onclick = function() {
+        modal.style.display = "none";
+      }
+}
+
 
 
 // Get the modal

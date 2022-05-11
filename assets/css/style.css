@@ -169,11 +169,6 @@ text-align: center;
         }
     
     }
-    @media screen and (max-height:650px){
-        #footer {
-            bottom: -150px;
-        }
-    }
 
 
 @media screen and (max-width:450px){

@@ -25,12 +25,13 @@ text-align: center;
 .points {
     border: solid 2px;
     display: inline-block;
-    width: 15%;
+    width: 30%;
 }
 .player{
     display: inline-block ;
     font-size: 3rem;
     margin-right: 20px;
+    width: 20%;
 }
 
 
@@ -38,6 +39,7 @@ text-align: center;
     display: inline-block; 
     font-size: 3rem;
     margin-left: 20px;
+    width: 20%;
 }
 #result {
     text-align: center;
@@ -120,8 +122,9 @@ text-align: center;
     text-decoration: none;
     cursor: pointer;
   }
-  #myBtn {
+  .buttons {
       padding: 5px;
+      margin: 0 .5rem;
   }
 
 .rules {

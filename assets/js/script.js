@@ -18,12 +18,8 @@ function getComputerChoice() {
 }
 (getComputerChoice());
 
-function capitaliseWord(word) {
-    if (word === "rock" ) return "Rock";
-    if (word === "paper") return "Paper";
-    if (word === "scissors") return "Scissors";
-    if (word === "lizard") return "Lizard";
-    return "Spock"
+function capitaliseWord(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 

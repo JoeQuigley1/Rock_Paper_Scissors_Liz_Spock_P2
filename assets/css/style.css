@@ -106,8 +106,6 @@ text-align: center;
 
 .rules {
     text-align: center;
-
-
 }
 #rules-img {
     width: 20rem;
@@ -184,18 +182,26 @@ text-align: center;
         padding-left: 2%;
     }
     .choice {
-        padding: 10px;
-    }
-    #result {
-        font-size: 1rem;
+        padding: 20px;
+        margin: 2%;
     }
 
     .rules {
         padding:10%;
     }
+    .myBtn {
+        margin: 5%;
+    }
     #footer {
-        bottom: auto;
+        margin: 0 auto;
+        bottom: -200px;
+    }
     }
 
+    @media screen and (max-width:320px) {
+
+        #footer {
+            bottom: -400px;
+        }
     }
    

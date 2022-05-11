@@ -102,20 +102,20 @@ function endGame() {
         gameOver()
         playerScore = 0;
         computerScore = 0;
-        updateScore(); 
+        resetScore(); 
     }
    
     if (computerScore === 10){
         gameOver()
         playerScore = 0;
         computerScore = 0;
-        updateScore();
+        resetScore();
     }
     
 }
 
 function gameOver() {
-    document.getElementById('gameOver').style.display="block";
+    //*document.getElementById('gameOver').style.display="block";
     
 }
 
@@ -151,9 +151,19 @@ window.onclick = function(event) {
   }
 }
 
+// Makes scores automatically reset
+resetScore = function() {
+    playerScore = 0;
+    computerScore = 0;
 
+    document.getElementById("computer-score").innerHTML = computerScore
+    document.getElementById("player-score").innerHTML = playerScore
+}
 
-function updateScore() {
+// When user clicks on reset button scores will reset
+const reset = function() {
+    playerScore = 0;
+    computerScore = 0;
     document.getElementById("computer-score").innerHTML = computerScore
     document.getElementById("player-score").innerHTML = playerScore
 }

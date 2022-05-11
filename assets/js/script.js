@@ -29,7 +29,7 @@ function win(playerChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${capitaliseWord(playerChoice)}  beats ${capitaliseWord(computerChoice)}. You win!`;
     document.getElementById(playerChoice).classList.add('winner');
-    setTimeout(function() {document.getElementById(playerChoice).classList.remove('winner') }, 200)
+    setTimeout(function() {document.getElementById(playerChoice).classList.remove('winner'); }, 200);
 }
 
 function lose(playerChoice, computerChoice) {
@@ -38,7 +38,7 @@ function lose(playerChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${capitaliseWord(playerChoice)}  loses to ${capitaliseWord(computerChoice)}. You lost!`;
     document.getElementById(playerChoice).classList.add('loser');
-    setTimeout(function() {document.getElementById(playerChoice).classList.remove('loser') }, 200)
+    setTimeout(function() {document.getElementById(playerChoice).classList.remove('loser'); }, 200);
 }
 
 function draw(playerChoice, computerChoice) {
@@ -46,7 +46,7 @@ function draw(playerChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${capitaliseWord(playerChoice)} is the same as ${capitaliseWord(computerChoice)}. It's a draw!!`;
     document.getElementById(playerChoice).classList.add('draw');
-    setTimeout(function() {document.getElementById(playerChoice).classList.remove('draw') }, 200)
+    setTimeout(function() {document.getElementById(playerChoice).classList.remove('draw'); }, 200);
 }
 
 function game(playerChoice) {
@@ -124,7 +124,6 @@ function compWin() {
     document.getElementById('gameOver').style.display="block";
     document.getElementById('player-win').style.display ="none";
     document.getElementById('player-lose').style.display ="block";
-    
 }
 
 function playerWin(){
@@ -134,14 +133,14 @@ function playerWin(){
 }
 
 function playAgain() {
-    document.getElementById('gameOver').style.display="none"
+    document.getElementById('gameOver').style.display="none";
     document.getElementById('player-win').style.display ="none";
     document.getElementById('player-lose').style.display ="none";
     resetScore();
 }
 function giveUp() {
     document.getElementById('gameOver').style.display="block";
-    document.getElementById('gameOver').style.display="none"
+    document.getElementById('gameOver').style.display="none";
 }
 
 
@@ -162,33 +161,33 @@ const span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
   console.log();
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 // Makes scores automatically reset
 resetScore = function() {
     playerScore = 0;
     computerScore = 0;
 
-    document.getElementById("computer-score").innerHTML = computerScore
-    document.getElementById("player-score").innerHTML = playerScore
-}
+    document.getElementById("computer-score").innerHTML = computerScore;
+    document.getElementById("player-score").innerHTML = playerScore;
+};
 
 // When user clicks on reset button scores will reset
-const reset = function() {
+let reset = function() {
     playerScore = 0;
     computerScore = 0;
-    document.getElementById("computer-score").innerHTML = computerScore
-    document.getElementById("player-score").innerHTML = playerScore
-}
+    document.getElementById("computer-score").innerHTML = computerScore;
+    document.getElementById("player-score").innerHTML = playerScore;
+};

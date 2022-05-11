@@ -4,10 +4,11 @@ body {
     background-color: #DBDBDB;
     font-family: 'Radio Canada', sans-serif;
     height: 100vh;
+    color: #000000;
 }
 /* Adds style to the title in the header */
  .heading {
-     background-color: #546A7B;
+     background-color: #5D7989;
      padding: 10px 0;
      font-size: 2rem;
  }

@@ -1,14 +1,8 @@
-html {
-    position: relative;
-    min-height: 100%;
-}
-
 body {
     margin: 0;
     padding: 0;
     background-color: #DBDBDB;
     font-family: 'Radio Canada', sans-serif;
-
 }
 
 #game-rules {
@@ -133,3 +127,75 @@ text-align: center;
         text-align: center;
         ;
     }
+
+    @media screen and (max-width:1050px) {
+        .heading {
+            font-size: 1rem;
+        }
+        .choices {
+            margin: 10% auto;
+        }
+        .choice {
+            font-size: 3rem;
+        }
+        .modal-content{
+            width: 80%;
+        }
+    
+    }
+
+    @media screen and (max-width:650px) {
+        .score-area {
+            font-size: 2rem;
+        }
+        .player {
+            font-size: 2rem;
+        }
+        .computer {
+            font-size: 2rem;
+        }
+        .modal p {
+            font-size: 1rem;
+        }
+        #rules-img{
+            width: 60%;
+        }
+        
+    }
+
+    @media screen and (max-width:450px){
+
+    .score-area {
+        font-size: 1.5rem;
+        width: auto;
+        padding-top: 5%;
+    }
+    .points {
+        width: auto;
+    }
+    .player {
+        font-size: 1.5rem;
+        margin: auto;
+        padding-right: 2%;
+    }
+    .computer {
+        font-size: 1.5rem;
+        margin: auto;
+        padding-left: 2%;
+    }
+    .choice {
+        padding: 10px;
+    }
+    #result {
+        font-size: 1rem;
+    }
+
+    .rules {
+        padding:10%;
+    }
+    #footer {
+        bottom: auto;
+    }
+
+    }
+   

@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #DBDBDB;
     font-family: 'Radio Canada', sans-serif;
+    height: 100vh;
 }
 
 #game-rules {
@@ -40,13 +41,14 @@ text-align: center;
 #result {
     text-align: center;
     font-size: 2rem;
-    margin: 50px 0;
+    margin: 5% 0;
 }
 
 .choices {
     width: 100% ;
     text-align: center;
-    margin: 100px 0;
+    margin: 5% 0;
+    padding-bottom: 5%;
     
 }
 
@@ -111,32 +113,21 @@ text-align: center;
     width: 20rem;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    min-height: 20px;
-    text-align: center;
-    width: 100%;
-    font-size: 1.5rem;
-    background-color:#C2C2C2 ; 
-    padding: 10px 0;
-}
-#social-link {
-        text-align: center;
-        ;
+
+
+@media screen and (max-width:1280px) {
+    .heading {
+        font-size: 1rem;
     }
 
+    .modal p {
+        font-size: 1rem;
+    }
 
-
-
+}
 
 @media screen and (max-width:1050px) {
-        .heading {
-            font-size: 1rem;
-        }
-        .choices {
-            margin: 10% auto;
-        }
+        
         .choice {
             font-size: 3rem;
         }
@@ -162,12 +153,14 @@ text-align: center;
         #rules-img{
             width: 60%;
         }
-        
-        #footer {
-            margin: 0 auto;
-            bottom: 0px;
+        .choice {
+            font-size: 2rem;
         }
-    
+
+        #result {
+            font-size: 1.5rem;
+        }
+        
     }
 
 
@@ -176,7 +169,7 @@ text-align: center;
     .score-area {
         font-size: 1.5rem;
         width: auto;
-        padding-top: 5%;
+        padding-top: 2%;
     }
     .points {
         width: auto;
@@ -203,10 +196,3 @@ text-align: center;
         margin: 5%;
     }
     }
-
- @media screen and (max-width:320px) {
-
-        #footer {
-            bottom: -400px;
-        }
-     }

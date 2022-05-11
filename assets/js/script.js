@@ -102,23 +102,19 @@ function endGame() {
         alert("You got 10 points! Nice one! Click ok and choose again to continue playing.");
         playerScore = 0;
         computerScore = 0;
-
-        document.getElementById("computer-score").innerHTML = computerScore
-
-        document.getElementById("player-score").innerHTML = playerScore
+        updateScore(); 
     }
    
     if (computerScore === 10){
         alert("The computer won! Better luck next time. Click ok and choose again to continue playing.");
         playerScore = 0;
         computerScore = 0;
-
-        document.getElementById("computer-score").innerHTML = computerScore
-
-        document.getElementById("player-score").innerHTML = playerScore
+        updateScore();
     }
     
 }
+
+var gameover = document.getElementById('gameOver');
 
 
 // Get the modal
@@ -147,9 +143,13 @@ window.onclick = function(event) {
   }
 }
 
-var reset = function() {
+const reset = function() {
     playerScore = 0;
     computerScore = 0;
+    updateScore();
+}
+
+function updateScore() {
 
     document.getElementById("computer-score").innerHTML = computerScore
 

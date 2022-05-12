@@ -181,6 +181,9 @@ text-align: center;
         #rules-img{
             width: 60%;
         }
+        .heading {
+            font-size: 1rem;
+        }
         .choice {
             font-size: 2rem;
         }
@@ -192,22 +195,21 @@ text-align: center;
         width: auto;
         padding-top: 2%;
     }
-    .points {
-        width: auto;
-    }
     .player {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: auto;
         padding-right: 2%;
     }
+    
     .computer {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: auto;
         padding-left: 2%;
     }
     .choice {
         padding: 20px;
         margin: 2%;
+        font-size: 1rem;
     }
     .rules {
         padding:10%;
@@ -215,4 +217,7 @@ text-align: center;
     .myBtn {
         margin: 5%;
     }
+}
+@media screen and (max-width:) {
+    
 }

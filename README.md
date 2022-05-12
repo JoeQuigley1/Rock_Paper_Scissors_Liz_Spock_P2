@@ -1,4 +1,5 @@
-# Rock, Paper, Scissors, Spock, Lizard
+# Rock Paper Scissors Lizard Spock
+* A fun twist on the traditional Rock Paper Scissors game. 
 
 ![Logo](docs/testing/responsive-design.png)
 
@@ -9,6 +10,16 @@
 # Table of Contents
 
 + [UX](#ux "UX")
+    + [User Goals](#user-goals "User Goals")
+    + [User Stoies](#user-stories "User Stories")
+    + [Site Owner's Goals](#site-owners-goals "Site Owner's Goals")
+    + [Requirements](#requirements)
+    + [Design Choices](#design-choices)
+        + [Fonts](#fonts)
+        + [Icons](#icons)
+        + [Colours](#colours)
+    + [Features](#features)
+        + [Existing Features](#existing-features)
 
 
 
@@ -63,8 +74,31 @@ I chose to use the very suitable icons from [Font Awsome Library](https://fontaw
 
 ## Colours 
 
-I used [Coolors](https://coolors.co/ "Coolors") to generate the color palette.
-The Colours were 
+Initially I used [Coolors](https://coolors.co/ "Coolors") to generate the color palette which would later be altered slightly during !!!!!!ADD link to color testng !![testing](#testing "Testing"). 
+
+
+The main colours used were: 
+
+* --#DBDBDB in the body.
+* --#5D7989 in the heading.
+* --#000000 as the font and icon color.
+
+These can be seen in the responsive design [above](#rock-paper-scissors-lizard-spock).
+
+In addition Green and Red were used as a box-shadowing to indicate whether the user answered corretly or incorrectly. The heading color was used to indicate a draw. 
+
+
+# Features
+
+## Existing Features
+
+### Header 
+![Header](docs/feature-screenshots/heading.png)
+\
+&nbsp;
+
+
+
 
 
 ## Credits

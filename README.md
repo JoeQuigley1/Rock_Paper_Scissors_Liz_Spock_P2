@@ -7,6 +7,9 @@
 
     The goal of this project is to entertain users while giving them a seemless experience. The project was inspired by Code Institue and their example projects.
 
+# Live website
+A link to the live website can be found [here](https://joequigley1.github.io/Rock_Paper_Scissors_Liz_Spock_P2/).
+
 # Table of Contents
 
  + [UX](#ux "UX")
@@ -81,7 +84,7 @@
 # Design Choices
 
 ## Fonts 
-I used [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a text that suited the sleek modern design of the website. The font I chose was [Radio Canada](https://fonts.google.com/?query=Radio+Canada ). I felt this font was very clear and blended very well with the overall design.
+I used [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a text that suited the sleek modern design of the website. The font I chose was [Radio Canada](https://fonts.google.com/?query=Radio+Canada "Radio Canada"). I felt this font was very clear and blended very well with the overall design.
 
 ## Icons 
 I chose to use the very suitable icons from [Font Awsome Library](https://fontawesome.com/ "Font Awesome"). These icons seemed modern and easy to distinguish at a glance.

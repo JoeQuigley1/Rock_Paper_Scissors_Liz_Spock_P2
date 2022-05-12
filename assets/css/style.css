@@ -218,3 +218,14 @@ text-align: center;
         margin: 5%;
     }
 }
+@media screen and (max-width:280px) {
+    .heading {
+        font-size: .7rem;
+    }
+    .player{
+        font-size: 1rem;
+    }
+    .computer {
+        font-size: 1rem;
+    }
+}

@@ -56,7 +56,7 @@
 # Design Choices
 
 ## Fonts 
-I used [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a text that suited the sleek modern design of the website.
+I used [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a text that suited the sleek modern design of the website. The font I chose was [Radio Canada](https://fonts.google.com/?query=Radio+Canada ). I felt this font was very clear and blended very well with the overall design.
 
 ## Icons 
 I chose to use the very suitable icons from [Font Awsome Library](https://fontawesome.com/ "Font Awesome"). These icons seemed modern and easy to distinguish at a glance.

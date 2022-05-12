@@ -96,6 +96,43 @@ In addition Green and Red were used as a box-shadowing to indicate whether the u
 ![Header](docs/feature-screenshots/heading.png)
 \
 &nbsp;
++ The Header located at the top of the page has a contrasting background color which helps itstand out.
++ The title of the game can be seen clearly.
+
+### Scoreboard
+
++ Also visible above is the scoreboard feature which allows the user to compete against the computer.
++ Both the player and the computer log their scores into the scoreboard.
+
+### Buttons 
+![Buttons](docs/feature-screenshots/body.png)
+\
+&nbsp;
+
++ The buttons are five icons taken from [Font Awsome Library](https://fontawesome.com/ "Font Awesome").
++ The contrast between the black buttons and the body of the page make the buttons stand out.
++ The buttons change color to that of the header when hovered over or clicked.
++ The buttons also have a box shadow which helps indicate to the user if they were correct or not.
+
+### Result
+![Results](docs/feature-screenshots/result-message.png)
+\
+&nbsp;
+
++ The result message indicates to the user what they picked.
++ A secondary message also indicates whther they won or lost.
+
+### Rules
+
+![Rules](docs/feature-screenshots/rules.png)
+\
+&nbsp;
+
++ The rules are a modal pop up.
++ They inform the user how to play and what the number of points needed to win.
++ 
+
+
 
 
 
@@ -107,4 +144,7 @@ Modal box for rules taken from W3schools - https://www.w3schools.com/howto/howto
 
 Explanation image taken from openclipart link- https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock
 
+Favicon image taken from pinterest - https://br.pinterest.com/pin/471189179763434016/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id={{default.session}}&simplified=true 
+
+https://favicon.io/favicon-converter/ used to generate the favicon
 

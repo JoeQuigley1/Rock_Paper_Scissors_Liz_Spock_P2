@@ -9,28 +9,28 @@
 
 # Table of Contents
 
-+ [UX](#ux "UX")
+ + [UX](#ux "UX")
     + [User Goals](#user-goals "User Goals")
     + [User Stoies](#user-stories "User Stories")
     + [Site Owner's Goals](#site-owners-goals "Site Owner's Goals")
     + [Requirements](#requirements)
     + [Design Choices](#design-choices)
-        + [Fonts](#fonts)
-        + [Icons](#icons)
-        + [Colours](#colours)
-    + [Features](#features)
-        + [Existing Features](#existing-features)
-        + [Future Feature](#future-features)
-    + [Technologies Used](#technologies-used)
-        + [Languages](#languages)
-        + [Libraries and Frameworks](#libraries-and-frameworks)
-        + [Tools](#tools)
-    + [Testing](#testing)
-        + [Additional Testing](#aditional-testing)
-        + [Unfixed Bugs](#unfixed-bugs)
-    + [Deployment](#deployment)
-        + [GitHub Pages](#github-pages)
-    + [Credits](#credits)
+     + [Fonts](#fonts)
+     + [Icons](#icons)
+    + [Colours](#colours)
+ + [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Future Feature](#future-features)
+ + [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Libraries and Frameworks](#libraries-and-frameworks)
+    + [Tools](#tools)
+ + [Testing](#testing)
+    + [Additional Testing](#aditional-testing)
+    + [Unfixed Bugs](#unfixed-bugs)
++ [Deployment](#deployment)
+    + [GitHub Pages](#github-pages)
++ [Credits](#credits)
 
 
 
@@ -124,7 +124,7 @@ In addition Green and Red were used as a box-shadowing to indicate whether the u
 + The buttons are five icons taken from [Font Awsome Library](https://fontawesome.com/ "Font Awesome").
 + The contrast between the black buttons and the body of the page make the buttons stand out.
 + The buttons change color to that of the header when hovered over or clicked.
-+ The buttons also have a box shadow which helps indicate to the user if they were correct or not.
++ The buttons also have a box shadow when clicked which helps indicate to the user if they were correct or not.
 \
 &nbsp;
 ### Result Message
@@ -151,7 +151,7 @@ In addition Green and Red were used as a box-shadowing to indicate whether the u
 + The message informs the user if they have reached 10 points and won the game.
 + The message is a modal pop up which contains a button to play again.
 + The play again button also resets the score.
-+ If the user closes the message the modal disapears and the score does not reset.
++ If the user closes the message the modal disapears but the score does not reset.
 \
 &nbsp;
 
@@ -161,7 +161,7 @@ In addition Green and Red were used as a box-shadowing to indicate whether the u
 + The message informs the user if the computer has reached 10 points and that they have lost the game.
 + The message is a modal pop up which contains a button to play again.
 + The play again button also resets the score.
-+ If the user closes the message the modal disapears and the score does not reset.
++ If the user closes the message the modal disapears but the score does not reset.
 \
 &nbsp;
 
@@ -253,16 +253,16 @@ After finishing the majority of the project I deployed the site on GitHub using 
 For Inspirations relating to code, help and advice. 
 
 + [Martina Terlevic](https://www.linkedin.com/in/martinaterlevic/ "Martina Terlevic") - Code Institute Mentor.
-+ [StackOverFlow]
++ [StackOverFlow] - Help with general questions
 + [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp "W3 Schools") - Modal help box.
-+ [Whatsdev](https://www.youtube.com/watch?v=qipq1BV5myU "Whatsdev") - Help with game functionality and box shadowing.
-+ [Code Institute] - For their lessons on coding and the example projects
++ [Whatsdev](https://www.youtube.com/watch?v=qipq1BV5myU "Whatsdev") - Help with general functionality and box shadowing.
++ [Code Institute] - For their lessons on coding and the example projects which was a base to work from. 
 + [Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ "Code with Ania Kubow") - Help with switch case.
 
 For help with Content.
 
 + Explanation image taken from [Openclipart](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) - Explanation image
 + Favicon image taken from pinterest [Pinterest](https://br.pinterest.com/pin/471189179763434016/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id={{default.session}}&simplified=true)
-+ Icons taken from Font Awesome
++ Icons taken from Font Awesome[Font Awsome Library](https://fontawesome.com/ "Font Awesome").
 
 

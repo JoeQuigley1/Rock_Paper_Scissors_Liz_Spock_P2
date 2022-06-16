@@ -35,13 +35,6 @@ A link to the live website can be found [here](https://joequigley1.github.io/Roc
     + [GitHub Pages](#github-pages)
 + [Credits](#credits)
 
-
-
-
-
-
-
-
 # UX
 
 ## User Goals
